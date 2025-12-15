@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <!--Заголовок-->
+	 <title>Карта Приволжского федерального округа</title>
+	 <!--Подключаем Leaflet-->
+	 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.0/dist/leaflet.css"/>
+	 <script src="https://unpkg.com/leaflet@1.9.0/dist/leaflet.js"></script>
+	 <!--Подключаем плагин leaflet-choropleth-->
+	 <script src="https://unpkg.com/leaflet-choropleth/dist/choropleth.js"></script>
+	 
+	  <!--Подключаем плагин leaflet-groupedlayercontrol-->
+	 <link rel="stylesheet" href="https://unpkg.com/leaflet-groupedlayercontrol/dist/leaflet.groupedlayercontrol.min.css" />
+	 <script src="https://unpkg.com/leaflet-groupedlayercontrol/dist/leaflet.groupedlayercontrol.min.js"></script>
+	 
+	 <!--Подключаем библиотеку Font Awesome версия 4.7.0-->
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	 
+	 <!--Подключаем плагин Leaflet.fullscreen-->
+	 <link href="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css" rel="stylesheet" />
+	 <script src="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js"></script>
+	 
+	 <!--Подключение плагина Leaflet.EasyButton-->
+	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
+	 <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
+	 
+	 <!-- Подключаем плагин leaflet-search -->
+	 <link rel="stylesheet" href="https://unpkg.com/leaflet-search/dist/leaflet-search.min.css" />
+	 <script src="https://unpkg.com/leaflet-search/dist/leaflet-search.min.js"></script>
+
+	 <!-- Подключаем файл CSS со стилями -->
+	 <Link rel="stylesheet" href="style.css">
+	  
+
+   </head>
+   
+   <body>
+      <!--Верхняя часть страницы сайта (Шапка)-->
+	  <div id = "header">
+		<!--Заголовок 1-го уровня-->
+		<h1>ПОВОЛЖСКИЙ ФЕДЕРАЛЬНЫЙ ОКРУГ</h1>
+	  </div>
+	  
+	  <!--Блок содержания сайта-->
+	  <div id = "main-container">
+	  
+		<!--Блок с картой-->
+		<div id = "map-container">
+			<!--Сама карта-->
+			<div id = "map"></div>
+		</div>
+		
+		<!--Блок текста-->
+		<div id = "text-container">
+			<!--Заголовок 2-го уровня-->
+			<h2>ПОВОЛЖСКИЙ ФЕДЕРАЛЬНЫЙ ОКРУГ</h2>
+			<!--Абзац-->
+			<p>
+				Поволжский федеральный округ (ПФО) представляет собой один из восьми федеральных округов России. 
+				Он был сформирован 13 мая 2000 года на основании президентского указа. 
+				В качестве административного центра округа выступает город Нижний Новгород.
+			</p>
+			
+			<h2>Основные характеристики</h2>
+			<p>
+				Площадь территории Поволжского федерального округа достигает 1 036 975 км², что составляет примерно 6,1% от всей площади России. 
+				По количеству жителей он уступает лишь Центральному федеральному округу, занимая второе место.
+				Округ простирается по Восточно-Европейской равнине и западным отрогам Уральских гор, охватывая Приволжскую возвышенность, 
+				Бугульминско-Белебеевскую возвышенность, Общий Сырт, а также Прикаспийскую и Окско-Донскую низменности. Самая высокая точка — гора Ямантау (1638 м) на Южном Урале.
+				Границы округа проходят следующим образом: на юго-востоке — с Казахстаном; внутри страны — на западе с Центральным, на северо-западе с Северо-Западным, на севере с Уральским и на юге с Южным федеральными округами.
+			</p>
+		</div>
+	  
+	  </div>
+	  
+	  <!--Нижняя часть страницы (Подвал)-->
+	  <div id = "footer">
+		Карта подготовлена студентом 2022-КФ-КиГ-2Б Е.А. Рассказовым
+		</br> <!--Перенос строки-->
+		МИИГАиК, 2025
+	  </div>
+	  
+	 <!--Подключение скриптов Leaflet-->
+	  <script src="script.js"></script>
+	  
+	  
+   </body>
+</html>
