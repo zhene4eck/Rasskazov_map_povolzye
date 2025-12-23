@@ -83,20 +83,22 @@
 	})
 
 	//Создаем 3-ю картограмму
-	const indicator3 = L.choropleth(boundary, {
-		valueProperty: 'Ожидаемая продолжительность жизни при рождении\n\n',
-		scale: ['#FFF0F0', '#FF0000'],
-		steps: 5,
-		mode: 'e',
-		style: {
-			color: '#C0C0C0',
-			weight: 0.3,
-			fillOpacity: 0.4
-		},
-		onEachFeature: function(feature, layer) {
-		layer.bindPopup(String(feature.properties.number_deaths))
-		}
-	})
+const indicator3 = L.choropleth(boundary, {
+  valueProperty: 'Ожидаемая продолжительность жизни при рождении\n\n', // с \n\n в конце!
+  scale: ['#FFF0F0', '#FF0000'], // красные оттенки как в 1‑й
+  steps: 5,
+  mode: 'e', // латинская e
+  style: {
+    color: '#C0C0C0',
+    weight: 0.3,
+    fillOpacity: 0.4
+  },
+  onEachFeature: function(feature, layer) {
+    layer.bindPopup(
+      String(feature.properties['Ожидаемая продолжительность жизни при рождении\n\n'])
+    );
+  }
+});
 
 	//Включаем по умолчанию отображение 1-й картограммы
 	indicator1.addTo(map);
