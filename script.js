@@ -84,10 +84,10 @@
 
 	//Создаем 3-ю картограмму
 	const indicator3 = L.choropleth(boundary, {
-		valueProperty: 'Ожидаемая продолжительность жизни при рождении',
+		valueProperty: 'Ожидаемая продолжительность жизни при рождении\n\n',
 		scale: ['#E6E6FA', '#FF0000'],
 		steps: 5,
-		mode: 'е',
+		mode: 'e',
 		style: {
 			color: '#C0C0C0',
 			weight: 0.3,
